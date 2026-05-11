@@ -13,6 +13,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 /*Typography*/
 
 html {
@@ -20,11 +21,16 @@ html {
 }
 
 body {
-  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
+  font-weight: 0;
 }
+/*there is no font weight in real code and mosh videos
+thats just what i added*/
+/*the real font family was intel*/
+/*change the font style later!!!!*/
 
 h1,
 h2,
@@ -109,6 +115,7 @@ a {
 }
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -143,6 +150,7 @@ a {
     padding-left: 0;
   }
 }
+
 /*Icons*/
 .icon {
   height: 40px;
@@ -160,6 +168,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 /*Buttons*/
 .btn {
   border-radius: 40px;
@@ -262,4 +271,46 @@ a {
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+/*Plans*/
+.plan__name {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.plan__price {
+  font-size: 6rem;
+}
+.plan_billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+@media screen and (mon-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan_billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan__description1 {
+    font-size: 1.7rem;
+  }
 }
